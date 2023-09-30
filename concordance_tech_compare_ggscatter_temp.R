@@ -5,10 +5,10 @@ library(ggplot2)
 library(ggpubr)
 library(SCpubr)
 library(sctransform)
-sample1.data=Read10X(data.dir ='/volumes/seq/projects/HBCA/BCMHBCA/BCMHBCA_10x_RNA/cellranger_v3_10/BCMHBCA/BCMHBCA07L_3h/outs/filtered_feature_bc_matrix/')
+sample1.data=Read10X(data.dir ='/path/outs/filtered_feature_bc_matrix/')
 sample1=CreateSeuratObject(counts=sample1.data, project ='sample1')
 sample1
-sample2.data= Read10X(data.dir = '/volumes/seq/projects/HBCA/BCMHBCA/BCMHBCA_10x_RNA/cellranger_v3_10/BCMHBCA/BCMHBCA07L_24Tis_3h/outs/filtered_feature_bc_matrix/')
+sample2.data= Read10X(data.dir = '/path/outs/filtered_feature_bc_matrix/')
 sample2=CreateSeuratObject(counts = sample2.data, project = 'sample2')
 sample2
   #add identification by tech
